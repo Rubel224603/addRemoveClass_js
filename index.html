@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Class add Remove</title>
+	<link rel="icon" href="me.png"/>
+
+</head>
+
+<style>
+#container{
+		 margin: 0 auto;
+		 width: 500px;
+	}
+	.show{
+		
+		color:yellow ;
+		
+	}#Text{
+
+		height: 50px; width: 400px; background:gray;
+		padding: 20px;font-size: 23px;
+		
+	}
+	button{
+		padding: 5px;
+		margin-left: 70px;
+	}
+
+</style>
+<body>
+	<div id="container">
+	
+		<button id="add">add class button </button>
+		<button id="rmov"> remove  Class button</button>
+		
+		
+		
+		<h1 id="Text" >Cilk Button and change the Text color</h1>
+	
+		
+	</div>
+	
+	
+	<script type="text/javascript">
+	
+		document.querySelector("#add").addEventListener("click",function(){
+		
+				if(document.querySelector(".show")){
+					alert("Click remove class button to change color");
+				}else{
+		
+					document.querySelector("#Text").classList.add("show");		
+			}
+		
+		});
+		document.querySelector("#rmov").addEventListener("click",function(){
+		
+				if(document.querySelector(".show")){
+					document.querySelector("#Text").classList.remove("show")
+
+					
+				}else{
+									alert("click add button to add class");
+
+					
+				}
+		
+		
+		
+		});
+
+		
+	</script>
+	
+	
+	
+	
+</body>
+</html>
